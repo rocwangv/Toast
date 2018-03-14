@@ -21,7 +21,7 @@
         color: white;
         background-color: rgba(0, 0, 0, 0.75);
         border-radius: 4px;
-        font-size: 14px;
+        font-size: 12px;
         opacity: 1;
         transition-property: opacity, transform;
         transition-duration: 0.2s;
@@ -37,8 +37,8 @@
         }
 
         .toastLoadingImg {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             margin: 5px auto;
             background-image: url("../img/loading.svg");
             background-size: 100%;
