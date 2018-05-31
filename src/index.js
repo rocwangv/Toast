@@ -6,15 +6,21 @@ import {render} from "react-dom";
 import Model from "./model";
 
 const div = document.createElement("div");
-div.style.position = 'fixed';
-div.style.left = 0;
-div.style.top = 0;
-div.style.width = '100%';
-div.style.height = '100%';
 document.body.appendChild(div);
 const container = render(<Model />, div);
 
 const Toast = function (opt) {
+    if (opt.type === 'loading') {
+        div.style.position = 'fixed';
+        div.style.left = 0;
+        div.style.top = 0;
+        div.style.width = '100%';
+        div.style.height = '100%';
+
+        if (opt.typeStatus === 2) {
+            div.style.display = 'none';
+        }
+    }
     opt = opt || {};
     if (opt.msg) {
         container.show(opt);
