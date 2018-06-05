@@ -16,9 +16,12 @@ const Toast = function (opt) {
         div.style.top = 0;
         div.style.width = '100%';
         div.style.height = '100%';
+        div.style.zIndex = 99999;
 
         if (opt.typeStatus === 2) {
             div.style.display = 'none';
+        } else {
+            div.style.display = 'block';
         }
     }
     opt = opt || {};
