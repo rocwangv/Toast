@@ -23,6 +23,8 @@ const Toast = function (opt) {
         } else {
             div.style.display = 'block';
         }
+    }else {
+        div.style = null;
     }
     opt = opt || {};
     if (opt.msg) {
